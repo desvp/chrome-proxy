@@ -1,0 +1,54 @@
+{
+  "extName":  {
+    "message": "代理设置",
+    "description": "The extension name."
+  },
+  "extDescription": {
+    "message": "用 Chrome Proxy API 设置代理",
+    "description": "The extension description."
+  },
+  "headerDirectConnection": {
+    "message": "直连",
+    "description": "Header for 'Direct Connection' configuration `fieldset`."
+  },
+  "errorNoExtensionAccess": {
+    "message": "本插件没有权限设置浏览器的代理",
+    "description": "Error message displayed when `levelOfControl` is 'not_controllable'."
+  },
+  "errorOtherExtensionControls": {
+    "message": "浏览器的代理被其它插件接管 详情请见 chrome://extensions",
+    "description": "Error message displayed when `levelOfControl` is 'controlled_by_other_extensions'."
+  },
+  "errorSettingRegularProxy": {
+    "message": "代理设置失败",
+    "description": "Error message, displayed when failing to set regular proxy settings."
+  },
+  "errorSettingIncognitoProxy": {
+    "message": "隐私代理设置失败",
+    "description": "Error message, displayed when failing to set incognito proxy settings."
+  },
+  "successfullySetProxy": {
+    "message": "代理设置成功",
+    "description": "Success message, displayed after proxy settings have been written."
+  },
+  "errorPopupTitle": {
+    "message": "错误: $1",
+    "description": "Error message used as popup title."
+  },
+  "errorProxyError": {
+    "message": "代理错误: $1.",
+    "description": "Error message displayed in popup when an error occurs."
+  },
+  "errorProxyDetailedError": {
+    "message": "代理错误: $1. $2.",
+    "description": "Error message displayed in popup when an error occurs."
+  },
+  "errorIdNotFound": {
+    "message": "Element with ID `$1` doesn't exist in the document",
+    "description": "Error message thrown when the given `id` doesn't exist"
+  },
+  "errorIdNotForm": {
+    "message": "Element with ID `$1` isn't a form element.",
+    "description": "Error message thrown when the given `id` isn't a form element."
+  }
+}
