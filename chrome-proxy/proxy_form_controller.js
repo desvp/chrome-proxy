@@ -525,6 +525,7 @@ ProxyFormController.prototype = {
    */
   callbackForRegularSettings_: function() {
     if (chrome.runtime.lastError) {
+      Action.setIcon('failure');
       this.generateAlert_(chrome.i18n.getMessage('errorSettingRegularProxy'));
       return;
     }
@@ -535,6 +536,7 @@ ProxyFormController.prototype = {
     } else {
       ProxyFormController.setPersistedSettings(this.config_);
       this.generateAlert_(chrome.i18n.getMessage('successfullySetProxy'));
+      Action.setIcon(this.config_.regular.mode);
     }
   },
 
@@ -575,7 +577,7 @@ ProxyFormController.prototype = {
         success.classList.remove('visible');
       else
         window.close();
-    }, 4000);
+    }, 1500);
   },
 
 

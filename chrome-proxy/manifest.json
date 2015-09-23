@@ -1,24 +1,21 @@
 {
   "name": "__MSG_extName__",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "__MSG_extDescription__",
   "default_locale": "zh_CN",
   "browser_action": {
-    "default_icon": "icon16.png",
+    "default_icon": "icons/icon-normal.png",
     "default_popup": "popup.html"
   },
   "icons": {
-    "16": "icon16.png",
-    "32": "icon32.png",
-    "48": "icon48.png",
-    "128": "icon128.png"
+    "16": "icons/icon-logo-16.png",
+    "32": "icons/icon-logo-32.png",
+    "48": "icons/icon-logo-48.png",
+    "64": "icons/icon-logo-64.png",
+    "128": "icons/icon-logo-128.png"
   },
   "background": {
-    "scripts": [
-      "proxy_form_controller.js",
-      "proxy_error_handler.js",
-      "background.js"
-    ]
+    "page": "popup.html"
   },
   "permissions": [
     "proxy"
